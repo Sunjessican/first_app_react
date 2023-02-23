@@ -7,7 +7,12 @@ import { Contact } from "./screens/Contact";
 function App() {
   return (
     <div className="container mt-10">
-      <header className="mb-5">
+      <header className="flex justify-between items-center mb-5">
+        <img
+          className="w-10"
+          src="Pictures/logo batman.jpg"
+          alt="ordinateur avec du code"
+        />
         <nav className="flex justify-end">
           <NavLink
             className="font-extrabold mr-3"
