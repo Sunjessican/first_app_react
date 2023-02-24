@@ -1,4 +1,4 @@
-import { type } from "os";
+import { MdMarkEmailRead } from "react-icons/md";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 type FormInputs = {
@@ -17,8 +17,11 @@ export const Contact = () => {
   };
   return (
     <main>
-      <h3 className="text-3xl font-extrabold mb-5">Contact</h3>
-      <p>EMAIL: sandrineibraima@gmail.com</p>
+      <h3 className="text-3xl font-extrabold mb-5">Contactez-moi</h3>
+      <p className="flex items-center">
+        <MdMarkEmailRead className="mr-3" />
+        sandrineibraima@gmail.com
+      </p>
 
       <form className="mt-5" onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-4">
